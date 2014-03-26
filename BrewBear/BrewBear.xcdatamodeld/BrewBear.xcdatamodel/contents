@@ -1,4 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5063" systemVersion="13C64" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Brew" representedClassName="Brew" syncable="YES">
+        <attribute name="bid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="final_gravity" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="initial_gravity" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="start_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="actions" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BrewAction" inverseName="brew" inverseEntity="BrewAction" syncable="YES"/>
+        <relationship name="recipe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipes" inverseName="brews" inverseEntity="Recipes" syncable="YES"/>
+    </entity>
+    <entity name="BrewAction" representedClassName="BrewAction" syncable="YES">
+        <attribute name="action_type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="aid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="target_met" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="brew" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Brew" inverseName="actions" inverseEntity="Brew" syncable="YES"/>
+    </entity>
+    <entity name="BrewEvent" representedClassName="BrewEvent" syncable="YES">
+        <attribute name="eid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="event_type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="recipe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipes" inverseName="events" inverseEntity="Recipes" syncable="YES"/>
+    </entity>
+    <entity name="Recipes" representedClassName="Recipes" syncable="YES">
+        <attribute name="final_gravity" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="initial_gravity" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="rid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="style" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="brews" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Brew" inverseName="recipe" inverseEntity="Brew" syncable="YES"/>
+        <relationship name="events" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BrewEvent" inverseName="recipe" inverseEntity="BrewEvent" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Brew" positionX="-396" positionY="-112" width="128" height="133"/>
+        <element name="BrewAction" positionX="-371" positionY="99" width="128" height="118"/>
+        <element name="BrewEvent" positionX="34" positionY="-76" width="128" height="103"/>
+        <element name="Recipes" positionX="-182" positionY="-144" width="128" height="148"/>
+    </elements>
 </model>

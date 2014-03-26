@@ -22,6 +22,13 @@
 		731FC62F18E23EDB00CDCBCA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731FC61318E23EDB00CDCBCA /* CoreData.framework */; };
 		731FC63718E23EDB00CDCBCA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 731FC63518E23EDB00CDCBCA /* InfoPlist.strings */; };
 		731FC63918E23EDB00CDCBCA /* BrewBearTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 731FC63818E23EDB00CDCBCA /* BrewBearTests.m */; };
+		731FC64318E23F1500CDCBCA /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731FC64218E23F1500CDCBCA /* MainStoryboard_iPhone.storyboard */; };
+		731FC64518E23F3500CDCBCA /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731FC64418E23F3500CDCBCA /* MainStoryboard_iPad.storyboard */; };
+		731FC64D18E2480A00CDCBCA /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 731FC64C18E2480A00CDCBCA /* ListViewController.m */; };
+		739B0DFD18E2588000D3368C /* Brew.m in Sources */ = {isa = PBXBuildFile; fileRef = 739B0DFC18E2588000D3368C /* Brew.m */; };
+		739B0E0018E2588100D3368C /* Recipes.m in Sources */ = {isa = PBXBuildFile; fileRef = 739B0DFF18E2588100D3368C /* Recipes.m */; };
+		739B0E0318E2588100D3368C /* BrewEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 739B0E0218E2588100D3368C /* BrewEvent.m */; };
+		739B0E0618E2588100D3368C /* BrewAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 739B0E0518E2588100D3368C /* BrewAction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,18 @@
 		731FC63418E23EDB00CDCBCA /* BrewBearTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BrewBearTests-Info.plist"; sourceTree = "<group>"; };
 		731FC63618E23EDB00CDCBCA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		731FC63818E23EDB00CDCBCA /* BrewBearTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrewBearTests.m; sourceTree = "<group>"; };
+		731FC64218E23F1500CDCBCA /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard_iPhone.storyboard; path = ../MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		731FC64418E23F3500CDCBCA /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard_iPad.storyboard; path = ../MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		731FC64B18E2480A00CDCBCA /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		731FC64C18E2480A00CDCBCA /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		739B0DFB18E2588000D3368C /* Brew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Brew.h; sourceTree = "<group>"; };
+		739B0DFC18E2588000D3368C /* Brew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Brew.m; sourceTree = "<group>"; };
+		739B0DFE18E2588100D3368C /* Recipes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipes.h; sourceTree = "<group>"; };
+		739B0DFF18E2588100D3368C /* Recipes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipes.m; sourceTree = "<group>"; };
+		739B0E0118E2588100D3368C /* BrewEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrewEvent.h; sourceTree = "<group>"; };
+		739B0E0218E2588100D3368C /* BrewEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrewEvent.m; sourceTree = "<group>"; };
+		739B0E0418E2588100D3368C /* BrewAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrewAction.h; sourceTree = "<group>"; };
+		739B0E0518E2588100D3368C /* BrewAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrewAction.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +134,9 @@
 		731FC61518E23EDB00CDCBCA /* BrewBear */ = {
 			isa = PBXGroup;
 			children = (
+				731FC64A18E247E500CDCBCA /* ViewControllers */,
+				731FC64818E241BF00CDCBCA /* BrewBearManagedObjects */,
+				731FC64718E23F5100CDCBCA /* Storyboards */,
 				731FC61E18E23EDB00CDCBCA /* AppDelegate.h */,
 				731FC61F18E23EDB00CDCBCA /* AppDelegate.m */,
 				731FC62418E23EDB00CDCBCA /* Images.xcassets */,
@@ -151,6 +173,39 @@
 				731FC63518E23EDB00CDCBCA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		731FC64718E23F5100CDCBCA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				731FC64418E23F3500CDCBCA /* MainStoryboard_iPad.storyboard */,
+				731FC64218E23F1500CDCBCA /* MainStoryboard_iPhone.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		731FC64818E241BF00CDCBCA /* BrewBearManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				739B0E0418E2588100D3368C /* BrewAction.h */,
+				739B0E0518E2588100D3368C /* BrewAction.m */,
+				739B0E0118E2588100D3368C /* BrewEvent.h */,
+				739B0E0218E2588100D3368C /* BrewEvent.m */,
+				739B0DFE18E2588100D3368C /* Recipes.h */,
+				739B0DFF18E2588100D3368C /* Recipes.m */,
+				739B0DFB18E2588000D3368C /* Brew.h */,
+				739B0DFC18E2588000D3368C /* Brew.m */,
+			);
+			name = BrewBearManagedObjects;
+			sourceTree = "<group>";
+		};
+		731FC64A18E247E500CDCBCA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				731FC64B18E2480A00CDCBCA /* ListViewController.h */,
+				731FC64C18E2480A00CDCBCA /* ListViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +283,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				731FC64518E23F3500CDCBCA /* MainStoryboard_iPad.storyboard in Resources */,
+				731FC64318E23F1500CDCBCA /* MainStoryboard_iPhone.storyboard in Resources */,
 				731FC61A18E23EDB00CDCBCA /* InfoPlist.strings in Resources */,
 				731FC62518E23EDB00CDCBCA /* Images.xcassets in Resources */,
 			);
@@ -248,9 +305,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				739B0DFD18E2588000D3368C /* Brew.m in Sources */,
 				731FC62018E23EDB00CDCBCA /* AppDelegate.m in Sources */,
 				731FC61C18E23EDB00CDCBCA /* main.m in Sources */,
+				731FC64D18E2480A00CDCBCA /* ListViewController.m in Sources */,
+				739B0E0318E2588100D3368C /* BrewEvent.m in Sources */,
+				739B0E0618E2588100D3368C /* BrewAction.m in Sources */,
 				731FC62318E23EDB00CDCBCA /* BrewBear.xcdatamodeld in Sources */,
+				739B0E0018E2588100D3368C /* Recipes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +511,7 @@
 				731FC63E18E23EDB00CDCBCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		731FC63F18E23EDB00CDCBCA /* Build configuration list for PBXNativeTarget "BrewBearTests" */ = {
 			isa = XCConfigurationList;
@@ -457,6 +520,7 @@
 				731FC64118E23EDB00CDCBCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
