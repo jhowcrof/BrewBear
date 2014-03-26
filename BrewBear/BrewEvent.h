@@ -9,13 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Recipes;
+@class Recipe;
 
 @interface BrewEvent : NSManagedObject
 
 @property (nonatomic) int64_t eid;
 @property (nonatomic) int16_t event_type;
 @property (nonatomic) int32_t time;
-@property (nonatomic, retain) Recipes *recipe;
+@property (nonatomic, retain) Recipe *recipe;
 
 @end

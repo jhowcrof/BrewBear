@@ -26,9 +26,11 @@
 		731FC64518E23F3500CDCBCA /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731FC64418E23F3500CDCBCA /* MainStoryboard_iPad.storyboard */; };
 		731FC64D18E2480A00CDCBCA /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 731FC64C18E2480A00CDCBCA /* ListViewController.m */; };
 		739B0DFD18E2588000D3368C /* Brew.m in Sources */ = {isa = PBXBuildFile; fileRef = 739B0DFC18E2588000D3368C /* Brew.m */; };
-		739B0E0018E2588100D3368C /* Recipes.m in Sources */ = {isa = PBXBuildFile; fileRef = 739B0DFF18E2588100D3368C /* Recipes.m */; };
 		739B0E0318E2588100D3368C /* BrewEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 739B0E0218E2588100D3368C /* BrewEvent.m */; };
 		739B0E0618E2588100D3368C /* BrewAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 739B0E0518E2588100D3368C /* BrewAction.m */; };
+		739B0E0918E27B2E00D3368C /* BrewBearDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 739B0E0818E27B2E00D3368C /* BrewBearDatabase.m */; };
+		739B0E1018E27F3500D3368C /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 739B0E0F18E27F3500D3368C /* Recipe.m */; };
+		739B0E1318E3210E00D3368C /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 739B0E1218E3210E00D3368C /* ListTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,12 +68,17 @@
 		731FC64C18E2480A00CDCBCA /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		739B0DFB18E2588000D3368C /* Brew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Brew.h; sourceTree = "<group>"; };
 		739B0DFC18E2588000D3368C /* Brew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Brew.m; sourceTree = "<group>"; };
-		739B0DFE18E2588100D3368C /* Recipes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipes.h; sourceTree = "<group>"; };
-		739B0DFF18E2588100D3368C /* Recipes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipes.m; sourceTree = "<group>"; };
 		739B0E0118E2588100D3368C /* BrewEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrewEvent.h; sourceTree = "<group>"; };
 		739B0E0218E2588100D3368C /* BrewEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrewEvent.m; sourceTree = "<group>"; };
 		739B0E0418E2588100D3368C /* BrewAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrewAction.h; sourceTree = "<group>"; };
 		739B0E0518E2588100D3368C /* BrewAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrewAction.m; sourceTree = "<group>"; };
+		739B0E0718E27B2E00D3368C /* BrewBearDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrewBearDatabase.h; sourceTree = "<group>"; };
+		739B0E0818E27B2E00D3368C /* BrewBearDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrewBearDatabase.m; sourceTree = "<group>"; };
+		739B0E0A18E27DFC00D3368C /* BrewBearManagedObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrewBearManagedObjects.h; sourceTree = "<group>"; };
+		739B0E0E18E27F3500D3368C /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
+		739B0E0F18E27F3500D3368C /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
+		739B0E1118E3210E00D3368C /* ListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
+		739B0E1218E3210E00D3368C /* ListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +141,8 @@
 		731FC61518E23EDB00CDCBCA /* BrewBear */ = {
 			isa = PBXGroup;
 			children = (
+				739B0E0718E27B2E00D3368C /* BrewBearDatabase.h */,
+				739B0E0818E27B2E00D3368C /* BrewBearDatabase.m */,
 				731FC64A18E247E500CDCBCA /* ViewControllers */,
 				731FC64818E241BF00CDCBCA /* BrewBearManagedObjects */,
 				731FC64718E23F5100CDCBCA /* Storyboards */,
@@ -187,14 +196,15 @@
 		731FC64818E241BF00CDCBCA /* BrewBearManagedObjects */ = {
 			isa = PBXGroup;
 			children = (
+				739B0E0A18E27DFC00D3368C /* BrewBearManagedObjects.h */,
 				739B0E0418E2588100D3368C /* BrewAction.h */,
 				739B0E0518E2588100D3368C /* BrewAction.m */,
 				739B0E0118E2588100D3368C /* BrewEvent.h */,
 				739B0E0218E2588100D3368C /* BrewEvent.m */,
-				739B0DFE18E2588100D3368C /* Recipes.h */,
-				739B0DFF18E2588100D3368C /* Recipes.m */,
 				739B0DFB18E2588000D3368C /* Brew.h */,
 				739B0DFC18E2588000D3368C /* Brew.m */,
+				739B0E0E18E27F3500D3368C /* Recipe.h */,
+				739B0E0F18E27F3500D3368C /* Recipe.m */,
 			);
 			name = BrewBearManagedObjects;
 			sourceTree = "<group>";
@@ -204,6 +214,8 @@
 			children = (
 				731FC64B18E2480A00CDCBCA /* ListViewController.h */,
 				731FC64C18E2480A00CDCBCA /* ListViewController.m */,
+				739B0E1118E3210E00D3368C /* ListTableViewController.h */,
+				739B0E1218E3210E00D3368C /* ListTableViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -312,7 +324,9 @@
 				739B0E0318E2588100D3368C /* BrewEvent.m in Sources */,
 				739B0E0618E2588100D3368C /* BrewAction.m in Sources */,
 				731FC62318E23EDB00CDCBCA /* BrewBear.xcdatamodeld in Sources */,
-				739B0E0018E2588100D3368C /* Recipes.m in Sources */,
+				739B0E0918E27B2E00D3368C /* BrewBearDatabase.m in Sources */,
+				739B0E1018E27F3500D3368C /* Recipe.m in Sources */,
+				739B0E1318E3210E00D3368C /* ListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,11 +6,12 @@
 //  Copyright (c) 2014 Jacob Howcroft. All rights reserved.
 //
 
-#import "Recipes.h"
+#import "Recipe.h"
 #import "Brew.h"
+#import "BrewEvent.h"
 
 
-@implementation Recipes
+@implementation Recipe
 
 @dynamic final_gravity;
 @dynamic initial_gravity;
